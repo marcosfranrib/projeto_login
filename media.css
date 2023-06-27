@@ -3,7 +3,13 @@
 @media screen and (max-width:587px){
 
     #login{
+      
         flex-direction: column-reverse;
+    }
+
+    #imagem,#formulario{
+        height: 250px;
+        width: 310px;
     }
 
     #imagem{
@@ -13,10 +19,22 @@
     #formulario{
         border-radius:0px 0px 10px 10px;
     }
+    h1{
+        margin-top: 10px;
+    }
+  
+    input{
+        width: 282px;
+    }
+
+    #b1,#b2{
+        width: 282.5px;
+    }
     
 }
 
 @media screen and (min-width:588px) and (max-width: 860px) {
+    
     #login{
         
         flex-direction: row-reverse;
@@ -33,11 +51,17 @@
         width: 380px;
     }
 
-    #b1,#b2{
-        width: 350px;
+    #imagem,#formulario{
+        height: 275px;
     }
 
     input{
         width: 347px;
     }
+
+    #b1,#b2{
+        width: 350px;
+    }
+
+   
 }
