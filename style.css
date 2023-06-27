@@ -14,19 +14,21 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row-reverse;
     height: 100vh;
+    width: 100vw;
+ 
 }
 
 #imagem,#formulario{
-    height: 220px;
+    height: 237px;
     box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.247);
-    width: 310px;
+    width: 290px;
 }
 
 #imagem{
     background-image: url(imagens/fundo.jpg);
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center bottom;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -43,38 +45,45 @@ h1{
     font-size: larger;
     text-align: center;
     font-weight: bolder;
-    margin-top: 12px;
+    margin-top: 17px;
 }
 
 p{
     font-weight: 380;
-    font-size: 10.5px;
+    font-size: 10px;
     text-align: justify;
-    padding-top: 10px;
+    padding-top: 3px;
     padding-left: 10px;
     padding-right: 14px;
 }
 
-
-
-form{
-    margin-top: 7px;
-}
-
-form p{
-    padding-top: 5px;
+#prg{
+    padding-top: 12px;
+    padding-bottom: 10px;
 }
 
 input{
+
+    height: 23px;
+    width: 267px;
     border-radius: 5px;
     border: 1px solid;
 }
 
+#senha{
+
+    background-color: #7fcfcf;
+}
+
 #b1,#b2{
-    width: 285px;
+    width: 270px;
     height: 30px;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 0px;
+}
+
+#b1,#b2:hover{
+    cursor: pointer;
 }
 
 #b1{
@@ -82,7 +91,7 @@ input{
     color: white;
 }
 
-#b2{
+#b2:hover{
     background-color: #68cece;
     color: #49a09d;
 }
