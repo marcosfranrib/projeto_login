@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(#5f2c82,#49a09d);
+}
+
+#login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    height: 100vh;
+}
+
+#imagem,#formulario{
+    height: 220px;
+    box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.247);
+    width: 310px;
+}
+
+#imagem{
+    background-image: url(imagens/fundo.jpg);
+    background-size: contain;
+    background-position: center bottom;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#formulario{
+    background-color: white;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 12px;
+}
+
+p{
+    font-weight: 380;
+    font-size: 10.5px;
+    text-align: justify;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 14px;
+}
+
+
+
+form{
+    margin-top: 7px;
+}
+
+form p{
+    padding-top: 5px;
+}
+
+input{
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+#b1,#b2{
+    width: 285px;
+    height: 30px;
+    border-radius: 10px;
+    border: 0px;
+}
+
+#b1{
+    background-color: rgb(24, 170, 170);
+    color: white;
+}
+
+#b2{
+    background-color: #68cece;
+    color: #49a09d;
+}
