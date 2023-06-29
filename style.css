@@ -9,6 +9,7 @@ body{
     background-image: url(fundoTela.jpg);
     background-size: cover;
     background-position: center bottom;
+    height: 104vh;
 }
 
 .container{
@@ -17,6 +18,7 @@ body{
    display: flex;
    justify-content: center;
    align-items: center;
+   margin-top: -28px;
 }
 
 .acesso,.foto{
@@ -202,7 +204,7 @@ input[type=submit]:hover{
     }
 
     .campo{
-        width: 242px;
+        width: 243px;
         padding: 4px;
     }
 

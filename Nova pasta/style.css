@@ -5,12 +5,12 @@
 }
 
 body{
-    height: 97vh;
+    height: 100vh;
     background-image: url(fundoC.png);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-  
+    overflow: hidden;
 }
 
 div{
@@ -19,16 +19,16 @@ div{
     align-items: center;
     height: 100vh;
     font-size: 25px;
-    margin-top: -50px;
 }
 
 p{
-    width: 150px;
-    padding: 4px;
+    width: 180px;
+    padding: 6px;
     text-align: center;
     color: blueviolet;
     background-color: white;
     border-radius: 8px;
+    margin-top: -180px;
     
 }
 
