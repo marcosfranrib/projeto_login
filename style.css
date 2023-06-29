@@ -3,95 +3,224 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
-    background-image: linear-gradient(#5f2c82,#49a09d);
-}
-
-#login{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-}
-
-#imagem,#formulario{
-    height: 287px;
-    box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.247);
-    width: 390px;
-}
-
-#imagem{
-    background-image: url(imagens/fundo.jpg);
+    background-image: url(espaco.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    background-position: top;
 }
 
-#formulario{
-    background-color: white;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+.container{
+   height: 100vh;
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.acesso,.foto{
+    height: 310px;
+    width: 350px;
+}
+
+.acesso{
+    background-color: rgb(231, 233, 229);
+    box-sizing: border-box;
+    padding: 10px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.foto{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 h1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 23px;
+    color: #700e0e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    font-weight: bolder;
-    margin-top: 30px;
+    padding-top: 12px;
 }
 
 p{
-    font-weight: 380;
-    font-size: 12.2px;
-    text-align: justify;
-    padding-top: 3px;
-    padding-left: 10px;
-    padding-right: 14px;
-    
+    color: #700e0e;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 10px;
+    margin-top: 8px;
+    text-align: center;
 }
 
-#prg{
-    padding-top: 12px;
-    padding-bottom: 10px;
-}
-
-input{
-    height: 23px;
-    width: 365px;
+.campo{
+    margin: auto;
     border-radius: 5px;
-    border: 1px solid;
-}
-
-#senha{
-
-    background-color: #7fcfcf;
-}
-
-#b1,#b2{
-    width: 368px;
+    background-color: #700e0e;
     height: 30px;
-    border-radius: 5px;
-    border: 0px;
+    width: 272px;
+    padding: 2px 4px;
+    margin-bottom: 5px;
 }
 
-#b1,#b2:hover{
-    cursor: pointer;
-}
-
-#b1{
-    margin-top: 5px;
-    background-color: rgb(24, 170, 170);
+.material-icons{
+    font-size: 28px !important;
     color: white;
 }
 
-#b2:hover{
-    background-color: #68cece;
-    color: #49a09d;
+#login,#pass{
+    transform: translateY(-8px);
+    width: 230px;
+    padding: 5px;
+}
+
+#login, #pass,#entrar,#recuperar{
+    border: 0px;
+    border-radius: 3px;
+}
+
+input[type=submit] {
+    display: block;
+    margin: auto; 
+    width: 279px;
+    padding: 7px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type=submit]:hover{
+    cursor: pointer;
+}
+
+#entrar{
+    background-color:  #49a125;
+    color: white;
+}
+
+#entrar:hover{
+    background-color: #69e737;
+    color: #34741A;
+}
+
+#recuperar{
+    background-color: bisque;
+    color: #111111a1;
+}
+
+#recuperar:hover{
+    background-color: #700e0ecb;
+    color: white;
+}
+
+
+.cadastro{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 13px;
+    font-size: 12px;
+}
+
+.cadastro > a{
+    
+    color: #700e0ecb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cadastro > a:hover{
+    color: #bb3232cb;
+}
+
+.foto{
+    background-image: url(fundo.jpg);
+    background-position: left center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*TABLET*/
+@media screen and (min-width:696px) and (max-width:980px){
+    
+    .container{
+        flex-direction: row-reverse;
+    }
+
+    .acesso{
+       border-radius: 0px 12px 12px 0px;
+       width:450px;
+       height: 315px;
+    }
+
+    .foto{
+        border-radius: 12px 0px 0px 12px;
+        width: 240px;
+        height: 315px;
+        background-position: center;
+    }
+
+    .campo{
+        margin: auto;
+        margin-bottom: 5px;
+        padding: 2px 4px;
+        width: 392px;
+    }
+    
+    #login, #pass{
+        margin-bottom: 5px;
+        padding: 5px;
+        width: 350px;  
+        transform: translateY(-9px); 
+     }
+
+    input[type=submit] {
+        display: block;
+        margin: auto; 
+        width: 398px;
+        padding: 7px;
+        margin-bottom: 5px;
+    }
+
+    #entrar:hover,#recuperar:hover{
+        cursor: pointer;
+    }
+
+    .cadastro{
+        font-size: 0.8em;
+    }
+}
+
+/*SMARTPHONE*/
+@media screen and (max-width:695px) {
+    
+    .container{
+        flex-direction: column-reverse;
+    }
+
+    .acesso{
+      padding-bottom: 20em;
+      width: 284px;
+      border-radius: 0px 0px 12px 12px;
+    }
+
+    .campo{
+        width: 242px;
+        padding: 4px;
+    }
+
+    #login,#pass{
+        padding: 8px 5px;
+        width: 200px;
+    }
+
+    #entrar,#recuperar{
+        padding: 9px;
+        width: 250px;
+    }
+
+    .foto{
+        height: 150px;
+        width:284px;
+        background-position: center;
+        border-radius: 12px 12px 0px 0px;
+    }
+
 }
