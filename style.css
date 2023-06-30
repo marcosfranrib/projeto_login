@@ -140,7 +140,7 @@ input[type=submit]:hover{
 }
 
 /*TABLET*/
-@media screen and (min-width:696px) and (max-width:980px){
+@media screen and (min-width:696px) and (max-width:1037px){
     
     .container{
         flex-direction: row-reverse;

@@ -41,3 +41,22 @@ p:hover{
     color: white;
     
 }
+
+@media screen and (min-width:980px) {
+
+    body{
+        background-image: url(../fundoG.png);
+        background-position: center;
+    }
+
+    div{
+        justify-content: left;
+        height: 174vh;
+        margin-left: 9em;
+    }
+
+    p{ 
+        padding: 15px;
+        border-radius: 15px;
+    }
+}
